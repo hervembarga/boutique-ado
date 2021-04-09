@@ -12,6 +12,7 @@ def checkout(request):
     stripe_public_key = settings.STRIPE_PUBLIC_KEY
     stripe_secret_key = settings.STRIPE_SECRET_KEY
     bag = request.session.get('bag', {})
+
     if not bag:
         messages.error(request, "There's nothing in your bag at the moment")
         return redirect(reverse('products'))
@@ -27,7 +28,7 @@ def checkout(request):
 
     print(intent)
 
-    order_form =OrderForm(request)
+    order_form = OrderForm()
     template = 'checkout/checkout.html'
     context = {
         'order_form': order_form,

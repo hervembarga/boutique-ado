@@ -28,9 +28,9 @@ SECRET_KEY = '*4%upmel9(%e0q+cq&8$_pm-!am)u_*t#4=pnli@)#jigxm!!t'
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'https://mbamher-boutique-ado.herokuapp.com',
-    'localhost',
-]
+    'mbamher-boutique-ado.herokuapp.com',
+    'localhost'
+    ]
 
 
 # Application definition

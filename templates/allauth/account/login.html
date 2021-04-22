@@ -10,6 +10,11 @@
 <hr>
 <h2 class="logo-font mb-4">{% trans "Sign In" %}</h2>
 <hr>
+{% load socialaccount %}
+
+<a href="{% provider_login_url 'google' %}">Google</a>
+<a href="{% provider_login_url 'github' %}">github</a>
+
 
 {% get_providers as socialaccount_providers %}
 

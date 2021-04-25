@@ -12,8 +12,15 @@
 <hr>
 {% load socialaccount %}
 
-<a href="{% provider_login_url 'google' %}">Google</a>
-<a href="{% provider_login_url 'github' %}">github</a>
+<a href="{% provider_login_url 'google' %}" class="btn btn-outline-google btn-lg btn-block rounded-0">
+  <i class="fab fa-google"></i> 
+  <span class="ml-2">
+    Sign In with Google
+  </span> </a>
+<a href="{% provider_login_url 'github' %}" class="btn btn-outline-github btn-lg btn-block rounded-0">
+  <i class="fab fa-github"></i>
+  <span class="ml-2">
+  Sign In with Github</span></a>
 
 
 {% get_providers as socialaccount_providers %}
@@ -21,17 +28,11 @@
 {% if socialaccount_providers %}
 <p>{% blocktrans with site.name as site_name %}Please sign in with one
 of your existing third party accounts. Or, <a href="{{ signup_url }}">sign up</a>
-for a {{ site_name }} account and sign in below:{% endblocktrans %}</p>
+</p>
 
-<div class="socialaccount_ballot">
+<p>for a {{ site_name }} account and sign in below:{% endblocktrans %}</p>
 
-  <ul class="socialaccount_providers">
-    {% include "socialaccount/snippets/provider_list.html" with process="login" %}
-  </ul>
 
-  <div class="login-or">{% trans 'or' %}</div>
-
-</div>
 
 {% include "socialaccount/snippets/login_extra.html" %}
 

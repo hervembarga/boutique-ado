@@ -50,6 +50,31 @@ body {
     background: black;
     color: white !important;
 }
+.btn-outline-github {
+    background: #666666;
+    color: white !important;
+    border: 1px solid #999999;
+}
+
+.btn-outline-github:hover,
+.btn-outline-github:active,
+.btn-outline-github:focus {
+    background: #333333;
+    color: white !important;
+}
+.btn-outline-google {
+    background: #EA4335;
+    color: white !important;/* use important to override link color for <a> element */
+    border: 1px solid #EA4335;
+}
+
+.btn-outline-google:hover,
+.btn-outline-google:active,
+.btn-outline-google:focus {
+    background: #f50000;;
+    color: white !important;
+}
+
 .shop-now-button:hover,
 .shop-now-button:active,
 .shop-now-button:focus,

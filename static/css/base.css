@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background: url('/media/homepage_background_cropped.jpg') no-repeat center center fixed;
+    background: url('/media/homepage-background.jpg') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
@@ -50,27 +50,41 @@ body {
     background: black;
     color: white !important;
 }
-.btn-outline-github {
+
+.btn-facebook {
+    background: #1877F2;
+    color: white !important;
+    border: 1px solid #1877F2;
+}
+
+.btn-facebook:hover,
+.btn-facebook:active,
+.btn-facebook:focus {
+    background: #3b5998;
+    color: white !important;
+}
+
+.btn-github {
     background: #666666;
     color: white !important;
     border: 1px solid #999999;
 }
 
-.btn-outline-github:hover,
-.btn-outline-github:active,
-.btn-outline-github:focus {
+.btn-github:hover,
+.btn-github:active,
+.btn-github:focus {
     background: #333333;
     color: white !important;
 }
-.btn-outline-google {
+.btn-google {
     background: #EA4335;
     color: white !important;/* use important to override link color for <a> element */
     border: 1px solid #EA4335;
 }
 
-.btn-outline-google:hover,
-.btn-outline-google:active,
-.btn-outline-google:focus {
+.btn-google:hover,
+.btn-google:active,
+.btn-google:focus {
     background: #f50000;;
     color: white !important;
 }
@@ -308,8 +322,8 @@ input[name='q']::placeholder {
         height: calc(100vh - 116px);
     }
 
-    .display-4.logo-font.text-black{
-        font-size: 2rem;
+    .display-5.logo-font.text-black{
+        font-size: 1.8rem;
     }
 
     .nav-link {

@@ -12,15 +12,19 @@
 <hr>
 {% load socialaccount %}
 
-<a href="{% provider_login_url 'google' %}" class="btn btn-outline-google btn-lg btn-block rounded-0">
+<a href="{% provider_login_url 'google' %}" class="btn btn-google btn-lg btn-block rounded-0">
   <i class="fab fa-google"></i> 
   <span class="ml-2">
     Sign In with Google
   </span> </a>
-<a href="{% provider_login_url 'github' %}" class="btn btn-outline-github btn-lg btn-block rounded-0">
+<a href="{% provider_login_url 'github' %}" class="btn btn-github btn-lg btn-block rounded-0">
   <i class="fab fa-github"></i>
   <span class="ml-2">
   Sign In with Github</span></a>
+  <a href="{% provider_login_url 'facebook' %}" class="btn btn-facebook btn-lg btn-block rounded-0">
+    <i class="fab fa-facebook-f"></i>
+    <span class="ml-2">
+    Sign In with Facebook</span></a>
 
 
 {% get_providers as socialaccount_providers %}

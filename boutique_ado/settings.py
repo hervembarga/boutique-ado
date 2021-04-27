@@ -48,7 +48,6 @@ INSTALLED_APPS = [
     'allauth.socialaccount',
     'allauth.socialaccount.providers.google',
     'allauth.socialaccount.providers.github',
-    'allauth.socialaccount.providers.facebook',
     'home',
     'products',
     'bag',
@@ -119,8 +118,7 @@ SOCIALACCOUNT_PROVIDERS = {
         'AUTH_PARAMS': {
             'access_type': 'online',
         }
-    },
-    
+    }
 }
 
 ACCOUNT_AUTHENTICATION_METHOD = 'username_email'

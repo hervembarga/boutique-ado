@@ -31,6 +31,7 @@ body {
     background: black;
     color: white;
     min-width: 260px;
+    box-shadow: 0 1px 2px #b4a2a2, -1px -2px 3px 0 #b4a2a2;
 }
 
 .btn-black {
@@ -48,19 +49,6 @@ body {
 .btn-outline-black:active,
 .btn-outline-black:focus {
     background: black;
-    color: white !important;
-}
-
-.btn-facebook {
-    background: #1877F2;
-    color: white !important;
-    border: 1px solid #1877F2;
-}
-
-.btn-facebook:hover,
-.btn-facebook:active,
-.btn-facebook:focus {
-    background: #3b5998;
     color: white !important;
 }
 

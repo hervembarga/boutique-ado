@@ -85,11 +85,3 @@ class OrderLineItem(models.Model):
     def __str__(self):
         return f'SKU {self.product.sku} on order {self.order.order_number}'
 
-
-class Mbarga(models.Model):
-
-    hervos = models.CharField(max_length=254)
-    regisc = models.CharField(max_length=254, blank=True)
-
-    def __str__(self):
-        return self.hervos

@@ -26,7 +26,7 @@ def webhook(request):
             json.loads(payload), stripe.api_key, wh_secret
         )
     except ValueError as e:
-        # Invalid payload
+        # Invalid pay load
         return HttpResponse(status=400)
     except Exception as e:
         return HttpResponse(content=e, status=400)

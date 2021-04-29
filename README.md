@@ -1,45 +1,89 @@
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
-Welcome hervembarga,
+<h1>Milestone Project – Django Ecommerce</h1>
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use.
+For this Milestone project, we had to complete the mini project and add two significants changes. I chose to implement webhooks on stripe and mplement social media account creation on All Auth.
 
-## Gitpod Reminders
+## Live Project
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+[Click here to view the live project.](https://mbamher-boutique-ado.herokuapp.com)
 
-`python3 -m http.server`
+-----
 
-A blue button should appear to click: *Make Public*,
+## Technologies Used
 
-Another blue button should appear to click: *Open Browser*.
+### Languages Used
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+-   HTML5
+-   CSS3
+-   Javascript
+-   Python
+-   PostgreSQL
 
-A blue button should appear to click: *Make Public*,
+### Frameworks, Libraries & Programs Used
 
-Another blue button should appear to click: *Open Browser*.
+1. [Bootstrap 4.4.1:](https://getbootstrap.com/docs/4.1/getting-started/introduction/)
+    - Bootstrap was used to assist with the responsiveness and styling of the website.
+1. [Font Awesome:](https://fontawesome.com/)
+    - Font Awesome was used throughout the website to add icons for aesthetic and UX purposes.
+1. [jQuery:](https://jquery.com/)
+    - jQuery was used to write less Javascript and quickly activate Bootstrap Javascript functionalities.
+1. [Gitpod:](https://gitpod.io/)
+    - Gitpod is an online integrated development environment (IDE). Gitpod was used to write and test our code.
+1. [GitHub:](https://github.com/)
+    - GitHub is used to store the projects code after being pushed from Gitpod.
+1. [Heroku:](https://www.heroku.com/)
+    - Heroku is used to deploy our project.Our Heroku account is connected to our Github repo.
+1. [Randomkeygen](https://randomkeygen.com/)
+    - Randomkeygen to generate passes for SECRET_KEY.
+1. [pgAdmin 4:](https://www.pgadmin.org/)
+    - PgAdmin 4 was used to manage our PostgreSQL Database.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+----
 
-## Updates Since The Instructional Video
+## Testing
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+-   [W3C Markup Validator](https://validator.w3.org/#validate_by_input) 
+-   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/validator.html.en#validate_by_input)
+ ### Links
+ Menu links, and external links were manually checked.
+### Further Testing
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+-   Google Chrome, Firefox, Microsoft Edge and Opera browsers.
+-   The website was viewed on a variety of devices such as Desktop, Laptop, Samsung A5 & iPhoneX.
+-   A large amount of testing was done to ensure that all pages were linking correctly.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+---
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+## Deployment
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+### Heroku Pages
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+The project was deployed on Heroku Pages. This [link](https://devcenter.heroku.com/articles/getting-started-with-python) can help to learn how to deploy Python Django App on Heroku.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+### Fixed error
+The was working fine on Gitpod and throwing a 500 error on Heroku.Heroku seems not to allow database table alteration from Gitpod app models. To fix that I had to install PgAdmin and connect to my Heroku PostgreSQL database.
 
---------
+---
+## Credits
 
-Happy coding!
+### Code
+
+-   [Code Institute GitHub repo](https://github.com/Code-Institute-Solutions/boutique_ado_v1) .
+
+-   [W3 Schools](http://w3schools.com/)
+
+-   [Bootstrap](https://getbootstrap.com/): used throughout the project mainly to make site responsive.
+
+-   [Stripe Api](https://stripe.com/) : used for sending messages through contact form.
+
+### Photos
+-   Photos are available on [Code Institute GitHub repo](https://github.com/Code-Institute-Solutions/boutique_ado_v1) .
+-   Homepage background image were pulled from [Unsplash](https://unsplash.com/photos/VFrcRtEQKL8) and get modified by the developer using paint 3D for the image background .
+
+### Acknowledgements
+
+-   My Mentor for continuous assistance and helpful feedback.
+-   [Stackoverflow](https://stackoverflow.com/) for tons of questions and responses available.
